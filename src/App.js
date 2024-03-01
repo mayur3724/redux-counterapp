@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CounterApp from "./Components/counterApp";
 
-function App() {
+const  App=()=> {
   return (
     <div>
-      
+      <CounterApp/>
     </div>
   );
 }
-
 export default App;

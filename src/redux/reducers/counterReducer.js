@@ -2,7 +2,7 @@ import { INCREASE, DECREASE, RESET } from "../actions/actionTypes";
 
 const initialState=0;
 
-const counterReducer=(state, action)=>{
+const counterReducer=(state=initialState, action)=>{
     switch(action.type){
         case INCREASE:
             return state+1
