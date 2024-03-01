@@ -1,10 +1,23 @@
 import React from "react";
 import CounterApp from "./Components/counterApp";
+import SongList from "./Components/SongList";
+import SongDisplay from "./Components/SongDisplay";
 
-const  App=()=> {
+const App = () => {
   return (
     <div>
-      <CounterApp/>
+      <CounterApp />
+
+      <div style={
+        {
+          display: "flex",
+          justifyContent: "space-around"
+        }
+      }>
+        <SongList />
+        <SongDisplay />
+      </div>
+
     </div>
   );
 }
